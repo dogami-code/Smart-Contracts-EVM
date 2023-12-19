@@ -1,7 +1,10 @@
 # Compiler files
 cache/
 out/
-lib/
+.idea
+
+.env
+.env-prod
 
 # Ignores development broadcast logs
 !/broadcast
