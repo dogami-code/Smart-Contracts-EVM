@@ -78,4 +78,8 @@ contract DOGAMI_MetaTxs is ERC2771Context, ERC721Enumerable, Ownable, Pausable {
         return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, Strings.toString(tokenId))) : "";
     }
 
+    function _contextSuffixLength() internal view virtual override(Context, ERC2771Context) returns (uint256) {
+        return 20;
+    }
+
 }
